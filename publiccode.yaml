@@ -1,10 +1,9 @@
 publiccodeYmlVersion: "0.1"
-
-name: "PetStoreBundle"
-url: "https://github.com/CommonGateway/PetStoreBundle"
+name: "FormIOBundle"
+url: "https://github.com/CommonGateway/FormIOBundle"
 releaseDate: "2022-10-01"
-
 softwareType: addon
+
 platforms:
   - web
   
@@ -13,9 +12,8 @@ categories:
   - it-development
   
 developmentStatus: beta
-
 description:
   nl:
-    shortDescription: "Een symfony bundel als voorbeeld."
+    shortDescription: "FormIOBundle"
   en:
-    shortDescription: "A symfony bundle as example."
+    shortDescription: "FormIOBundle"
