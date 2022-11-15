@@ -5,7 +5,9 @@
         https://symfony.com/schema/dic/services/services-1.0.xsd">
     <services>
         <defaults autowire="true" autoconfigure="true" />
-        <service public="true" id="CommonGateway\PetStoreBundle\Service\PetStoreService" />
-        <service public="true" id="CommonGateway\PetStoreBundle\ActionHandler\PetStoreHandler" />
+        <service public="true" id="CommonGateway\FormIOBundle\Service\FormIOService" >
+            <argument key="$entityManager" type="service" id="Doctrine\ORM\EntityManagerInterface"/>
+        </service>
+        <service public="true" id="CommonGateway\FormIOBundle\ActionHandler\FormIOHandler" />
     </services>
 </container>

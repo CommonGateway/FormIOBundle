@@ -1,16 +1,16 @@
 <?php
 
-namespace CommonGateway\PetStoreBundle\ActionHandler;
+namespace CommonGateway\FormIOBundle\ActionHandler;
 
-use CommonGateway\PetStoreBundle\Service\PetStoreService;
+use CommonGateway\FormIOBundle\Service\FormIOService;
 
-class PetStoreHandler
+class FormIOHandler
 {
-    private PetStoreService $petStoreService;
+    private FormIOService $formIOService;
 
-    public function __construct(PetStoreService $petStoreService)
+    public function __construct(FormIOService $formIOService)
     {
-        $this->petStoreService = $petStoreService;
+        $this->formIOService = $formIOService;
     }
 
     /**
@@ -23,7 +23,7 @@ class PetStoreHandler
         return [
             '$id'         => 'https://example.com/person.schema.json',
             '$schema'     => 'https://json-schema.org/draft/2020-12/schema',
-            'title'       => 'PetStore Action',
+            'title'       => 'FormIO Action',
             'description' => 'This handler returns a welcoming string',
             'required'    => [],
             'properties'  => [],
@@ -45,6 +45,6 @@ class PetStoreHandler
      */
     public function run(array $data, array $configuration): array
     {
-        return $this->petStoreService->petStoreHandler($data, $configuration);
+        return $this->formIOService->formIOHandler($data, $configuration);
     }
 }

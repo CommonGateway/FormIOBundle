@@ -1,7 +1,7 @@
 {
-    "name": "common-gateway/pet-store-bundle",
-    "description": "An example package for creating symfony flex bundles as plugins",
-	"type" : "symfony-bundle",
+    "name": "common-gateway/formio-bundle",
+    "description": "FormIO functionality for common gateway",
+	"type" : "common-gateway-plugin",
     "license": "EUPL-1.2",
     "minimum-stability" : "dev",
     "require": {
@@ -12,7 +12,7 @@
 	},
 	"autoload" : {
 		"psr-4" : {
-			"CommonGateway\\PetStoreBundle\\" : ""
+			"CommonGateway\\FormIOBundle\\" : ""
 		}
 	}
 }
