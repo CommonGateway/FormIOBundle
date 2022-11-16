@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Service;
+namespace CommonGateway\FormIOBundle\Service;
 
 use App\Entity\Attribute;
 use App\Entity\Entity;
